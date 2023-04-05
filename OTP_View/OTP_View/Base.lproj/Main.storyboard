@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register OTP-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OTP_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaX-sk-Zcd">
+                                <rect key="frame" x="28" y="95" width="91.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tRm-Fx-D1f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.09267137199640274" green="0.24404990673065186" blue="0.45751798152923584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4h8-V0-Lgw">
+                                <rect key="frame" x="20" y="185" width="380" height="80"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZGb-61-MdR">
+                                        <rect key="frame" x="102" y="5" width="80" height="70"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="HNZ-Bu-u1y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FaZ-cs-S3f">
+                                        <rect key="frame" x="192" y="5" width="80" height="70"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="lyZ-WD-HQZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9D-hs-HTc">
+                                        <rect key="frame" x="282" y="5" width="80" height="70"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="ghW-B9-zrN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkP-NI-NVh">
+                                        <rect key="frame" x="12" y="5" width="80" height="70"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="XbF-xO-CwU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="d9D-hs-HTc" firstAttribute="top" secondItem="4h8-V0-Lgw" secondAttribute="top" constant="5" id="1Io-GF-B1D"/>
+                                    <constraint firstAttribute="height" constant="80" id="4Vg-70-mJ6"/>
+                                    <constraint firstItem="FaZ-cs-S3f" firstAttribute="top" secondItem="4h8-V0-Lgw" secondAttribute="top" constant="5" id="B8H-Fc-fOl"/>
+                                    <constraint firstItem="AkP-NI-NVh" firstAttribute="leading" secondItem="4h8-V0-Lgw" secondAttribute="leading" constant="12" id="IwG-Gy-eBf"/>
+                                    <constraint firstAttribute="bottom" secondItem="AkP-NI-NVh" secondAttribute="bottom" constant="5" id="NAL-JK-7oW"/>
+                                    <constraint firstAttribute="bottom" secondItem="d9D-hs-HTc" secondAttribute="bottom" constant="5" id="VXd-9X-sCu"/>
+                                    <constraint firstItem="AkP-NI-NVh" firstAttribute="top" secondItem="4h8-V0-Lgw" secondAttribute="top" constant="5" id="Won-Pf-5AX"/>
+                                    <constraint firstAttribute="bottom" secondItem="FaZ-cs-S3f" secondAttribute="bottom" constant="5" id="cCk-p2-Yno"/>
+                                    <constraint firstItem="d9D-hs-HTc" firstAttribute="leading" secondItem="FaZ-cs-S3f" secondAttribute="trailing" constant="10" id="dCX-wV-4mv"/>
+                                    <constraint firstAttribute="width" constant="380" id="gCC-Zp-dE6"/>
+                                    <constraint firstItem="ZGb-61-MdR" firstAttribute="leading" secondItem="AkP-NI-NVh" secondAttribute="trailing" constant="10" id="grE-X6-Su3"/>
+                                    <constraint firstItem="ZGb-61-MdR" firstAttribute="top" secondItem="4h8-V0-Lgw" secondAttribute="top" constant="5" id="lGm-m6-GvH"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZGb-61-MdR" secondAttribute="bottom" constant="5" id="ltz-eK-NUo"/>
+                                    <constraint firstItem="FaZ-cs-S3f" firstAttribute="leading" secondItem="ZGb-61-MdR" secondAttribute="trailing" constant="10" id="nPa-To-qAK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.97311080122780058" green="1" blue="0.97562222212058147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4h8-V0-Lgw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A0g-CM-Wis"/>
+                            <constraint firstItem="4h8-V0-Lgw" firstAttribute="top" secondItem="uaX-sk-Zcd" secondAttribute="bottom" constant="50" id="F3L-DG-WXO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uaX-sk-Zcd" secondAttribute="trailing" constant="294.5" id="TVV-RL-PEg"/>
+                            <constraint firstItem="uaX-sk-Zcd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="xI3-c4-0bO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Register OTP" id="UW3-Uh-Wl4"/>
+                    <connections>
+                        <outlet property="txt1" destination="AkP-NI-NVh" id="9cJ-kx-dnk"/>
+                        <outlet property="txt2" destination="ZGb-61-MdR" id="IAj-bw-aHq"/>
+                        <outlet property="txt3" destination="FaZ-cs-S3f" id="gYC-6G-X9q"/>
+                        <outlet property="txt4" destination="d9D-hs-HTc" id="QzX-U0-E09"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="96"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
